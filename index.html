@@ -602,7 +602,7 @@ function startPayment(){
   if(!email || !email.includes('@')){ alert('Please enter a valid email'); return; }
   if(!phone){ alert('Please enter your phone number'); return; }
   var isIndia = selectedCountry === 'india';
-  var amount = isIndia ? 29900 : 300;
+  var amount = isIndia ? 100 : 100;
   var currency = isIndia ? 'INR' : 'USD';
   var priceLabel = isIndia ? '₹299' : '$3.00';
   closeCheckout();
